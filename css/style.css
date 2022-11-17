@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-	width: 1230px;
+	width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px 0 15px;
 }
@@ -72,7 +72,9 @@ img {
 
 /* ---------header -----------*/
 
-
+.header {
+	border-bottom: 1px solid #ECECEC;
+}
 
 .menu {
 	display: flex;
@@ -118,6 +120,15 @@ img {
 	color: var(--focus-color);
 }
 
+.headr-box {
+	display: flex;
+}
+
+.menu-contact {
+	display: flex;
+	margin-right: 0;
+}
+
 .contact-list {
 	display: flex;
 	margin-left: auto;
@@ -151,12 +162,12 @@ img {
 	padding-bottom: 200px;
 	text-align: center;
 
-	outline: 1px solid #188CE8;
 	background: #2F303A;
 }
 
 .hero-title {
-	margin-bottom: 30px;
+	width: 696px;
+	margin: 0 auto 30px;
 
 	text-transform: uppercase;
 	font-weight: 900;
@@ -220,11 +231,9 @@ text-align: center;
 
 .projects-list {
 	display: flex;
+	gap: 30px;
 }
 
-.projects-link:not(:last-child) {
-	margin-right: 30px;
-}
 
 .project-title {
 margin-bottom: 10px;
@@ -260,12 +269,14 @@ margin-bottom: 10px;
 }
 
 .team-link {
+	background-color: var(--white-text-color);
 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 	border-radius: 0px 0px 4px 4px;
 }
 
 .team-title {
-	padding: 30px 0 10px;
+	padding-top: 39px; 
+	margin-bottom: 10px;
 	text-align: center;
 
 	font-weight: 500;
@@ -296,9 +307,11 @@ footer {
 }
 
 .footer-logo {
+	display: block;
+	margin-bottom: 20px;
+
 	font-family: 'Raleway', sans-serif;
 	font-size: 26px;
-
 	color: var(--white-text-color);
 }
 
@@ -313,9 +326,6 @@ footer {
 	color: var(--second-color);
 }
 
-.info {
-	margin-top: 20px;
-}
 
 .info a:hover,
 .info a:focus {
@@ -377,21 +387,21 @@ footer {
 .portfolio-projects {
 	display: flex;
 	flex-wrap: wrap;
+	gap: 30px;
 }
 
 .portfolio-link {
 	width: 370px;
-	margin-bottom: 30px;
-
-	border: 1px solid #EEEEEE;
 }
 
-.portfolio-link:not(:last-child) {
-	margin-right: 30px;
+.box-content {
+	padding: 20px 24px;
+	border: 1px solid #EEEEEE;
+	border-top: none;
 }
 
 .portfolio-title {
-	padding: 20px 24px 4px;
+	margin-bottom: 4px;
 
 	font-weight: 700;
 	font-size: 18px;
@@ -400,8 +410,6 @@ footer {
 }
 
 .portfolio-text {
-	padding: 0 24px 20px;
-
 	font-size: 16px;
 	line-height: 1.8;
 	letter-spacing: 0.03em;
