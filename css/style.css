@@ -238,6 +238,7 @@ text-align: center;
 .project-title {
 margin-bottom: 10px;
 
+	font-size: 14px;
 	font-weight: 700;
 	line-height: 1.1;
 	letter-spacing: 0.03em;
